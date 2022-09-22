@@ -86,6 +86,11 @@
 
 .pokemon-card h3 {
     text-transform: capitalize;
+    color: aliceblue;
+}
+.pokemon-card p {
+    font-weight: bold;
+    color: aliceblue;
 }
 
 .pokemon-heart-btn{

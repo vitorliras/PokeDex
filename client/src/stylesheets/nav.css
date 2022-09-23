@@ -20,7 +20,7 @@
   margin-right: 100px;
 }
 
-.heart-nav button {
+.btn1 button {
   background: #fff;
   color: #ea0b29;
   font-weight: bold;
@@ -31,7 +31,7 @@
   width: 120px;
 }
 
-.heart-nav button:hover {
+.btn1 button:hover {
   background: transparent;
   color: #fff;
   box-shadow:

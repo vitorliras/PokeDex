@@ -1,0 +1,32 @@
+.footer-pokedex{
+    padding: 0 25px;
+}
+.footer-box {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: #ea0b29;
+    border-top-right-radius:30% ;
+    border-top-left-radius:30% ;
+    height: 60px;
+}
+
+.footer-box h4{
+    color: white;
+    font-weight: bold;
+}
+
+.footer-box  a{
+    text-decoration: none;
+    margin-left: 60px;
+}
+
+.notfound{
+    display: flex;
+    height: 305px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+

@@ -32,7 +32,7 @@ const NavBar = () => {
 
                 </div>
             </div>
-            <div className='heart-nav'><button>❤️{favoritePokemons.length} FAVORITE</button></div>
+            <div className='heart-nav btn1'><button>❤️{favoritePokemons.length} FAVORITE</button></div>
         </nav>
     )
 }

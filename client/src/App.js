@@ -6,6 +6,7 @@ import './stylesheets/search.css';
 import './stylesheets/pokedex.css';
 import './stylesheets/pagination.css';
 import './stylesheets/background-type.css';
+import './stylesheets/pokebola.css';
 
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
 

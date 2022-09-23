@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const SearchBar = (props) => {
-    const [search, setSearch]  = useState("Charlizard")
+    const [search, setSearch]  = useState()
     const {onSearch} = props
 
     const onChangeHandler = (e) => {
@@ -16,7 +16,7 @@ const SearchBar = (props) => {
     }
 
     return (
-        <div className='search-container'>
+        <div className='search-container mt-2'>
             <div className='search'>
                 <input placeholder='Buscar Pokemon...' onChange={onChangeHandler}></input>               
             </div>

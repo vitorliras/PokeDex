@@ -11,7 +11,7 @@
     background-size: 100% 100%;
 }
 .electric{
-    background-image: url('../assets/type-ground/electric.png');
+    background-image: url('../assets/type-ground/elec.png');
     background-size: 100% 100%;
 }
 .fairy{
@@ -27,7 +27,7 @@
     background-size: 100% 100%;
 }
 .flying{
-    background-image: url('../assets/type-ground/flying.jpeg');
+    background-image: url('../assets/type-ground/fly.png');
     background-size: 100% 100%;
 }
 .ghost{

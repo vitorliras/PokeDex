@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 
 import NavBar from '../components/NavBar';
-import SearchBar from '../components/SearchBar';
 import Pokedex from '../components/Pokedex';
 import { getPokemons, getPokemonsData, searchPokemon } from '../api';
+import Footer from '../components/Footer';
+import NotFound from '../components/NotFound';
 
 
 function Home() {
@@ -38,16 +39,16 @@ function Home() {
   }, [page])
 
 
-  const onSearchHandler = async (pokemon) =>{
-    if(!pokemon){
+  const onSearchHandler = async (pokemon) => {
+    if (!pokemon) {
       return fetchPokemons()
     }
     setLoading(true)
     setNotFound(false)
     const result = await searchPokemon(pokemon)
-    if(!result){
+    if (!result) {
       setNotFound(true)
-    }else{
+    } else {
       setPokemons([result])
       setPage(0)
       setTotalPages(1)
@@ -58,10 +59,15 @@ function Home() {
   return (
     <div>
       <NavBar />
-      <SearchBar onSearch={onSearchHandler} />
-      {notFound ? (<div>ddd</div>) :(
-      <Pokedex pokemons={pokemons} loading={loading} setPage={setPage} page={page} totalPages={totalPages} />
+      {notFound ? (
+        <>
+          <Pokedex onSearch={onSearchHandler} setPage={setPage} page={page} totalPages={totalPages} />
+          <NotFound/>
+        </>
+      ) : (
+        <Pokedex onSearch={onSearchHandler} pokemons={pokemons} loading={loading} setPage={setPage} page={page} totalPages={totalPages} />
       )}
+      <Footer />
     </div>
   );
 }

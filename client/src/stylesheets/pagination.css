@@ -3,3 +3,17 @@
     flex-direction: row;
     align-items: center;
 }
+.pagination-container button{
+    background-color: #0e5f9f;
+    border: none;
+    height: 20px;
+    align-items: center;
+    border-radius: 50%;;
+}
+.pagination-text p{
+    color: antiquewhite;
+    margin: 0 5px;
+}
+.pagination-container .arrow{
+    color: antiquewhite;
+}

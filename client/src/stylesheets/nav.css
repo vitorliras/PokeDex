@@ -1,12 +1,11 @@
 .nav-header {
   height: 60px;
   display: flex;
-  /* border-bottom-left-radius:50% ;
-    border-bottom-right-radius: 50%; */
   justify-content: space-between;
   align-items: center;
   background-color: #ea0b29;
   padding: 5px;
+  width: 100%;
 }
 
 .navbar-img {

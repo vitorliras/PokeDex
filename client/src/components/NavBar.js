@@ -11,7 +11,7 @@ const NavBar = () => {
                 <NavLink exact to="/">
                     <img
                         className='navbar-img'
-                        src='./logoPokeApi.png'
+                        src='../logoPokeApi.png'
                         alt='pokeapi-logo'
                     />
                 </NavLink>

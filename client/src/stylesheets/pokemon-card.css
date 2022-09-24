@@ -1,0 +1,147 @@
+.top-card {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.name-card h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 120px;
+    color: white;
+    margin-left: 30px;
+}
+
+.favorite-card {
+    background: #fff;
+    color: #ea0b29;
+    font-weight: bold;
+    line-height: 42px;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+  }
+  
+  .favorite-card:hover {
+    background: #ea0b29;
+    color: #fff;
+    box-shadow:
+      -7px -7px 20px 0px #fff9,
+      -4px -4px 5px 0px #fff9,
+      7px 7px 20px 0px #0002,
+      4px 4px 5px 0px #0001;
+  }
+  
+.favorite-card{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.bottom-card {
+    background-color: white;
+    border-top: 2px solid;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: block;
+    height: auto;
+}
+
+.bottom-card .B1-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.img-card {
+    width: 37%;
+    position: relative;
+    display: row;
+    left: 33%;
+}
+
+.pokemon-type-card {
+    display: flex;
+}
+
+.pokemon-type-text-card {
+    margin-right: 10px;
+    font: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 20px;
+    box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+        rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 5px;
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    border: 3px solid rgba(249, 249, 249, 0.1);
+    width: 80px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: antiquewhite;
+}
+
+.id-card {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 60px;
+    margin-right: 30px;
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+.firts-card {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+}
+
+.second-card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+@media (max-width: 868px) {
+    .img-card {
+        width: 100%;
+        left: 3%;
+    }
+
+    .name-card h1 {
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: 40px;
+        margin-left: 3px;
+    }
+}
+
+@media (min-width: 899px) and (max-width: 2000px) {
+    .img-card {
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: 40px;
+        margin-left: 3px;
+    }
+
+    .name-card h1 {
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: 40px;
+        margin-left: 3px;
+    }
+
+    .id-card {
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-right: 3px;
+        font-size: 40px;
+    }
+}

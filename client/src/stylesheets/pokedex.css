@@ -1,6 +1,5 @@
 .pokedex {
-    padding: 25px;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .pokedex-top {
@@ -23,6 +22,7 @@
 }
 
 .pokedex-list {
+    padding: 25px;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
@@ -107,8 +107,10 @@
 }
 
 .pokemon-card p {
+    text-decoration: none;
     font-weight: bold;
     color: aliceblue;
+    border: none;
 }
 
 .pokemon-heart-btn {

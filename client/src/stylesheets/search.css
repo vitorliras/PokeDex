@@ -53,6 +53,12 @@
 .notfound img {
     height: 250px;
 }
+p{
+    text-decoration: none;
+}
+h3{
+    text-decoration: none;
+}
 
 @media(max-width:433px) {
     .notfound  {

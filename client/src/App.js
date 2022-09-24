@@ -13,6 +13,7 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom'
 
 import { FavoriteProvider } from './Context/favoriteContext';
 import Home from './pages/home';
+import Favorite from './pages/favorite';
 
 const favoriteKey = "f"
 function App() {
@@ -47,6 +48,7 @@ function App() {
 
         <Routes>
           <Route path='/'  element={<Home/>}/>
+          <Route path='/favorite'  element={<Favorite/>}/>
 
         </Routes>
 

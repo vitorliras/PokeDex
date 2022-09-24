@@ -1,6 +1,6 @@
-.pokedex{
+.pokedex {
     padding: 25px;
-    margin-top: 50px;;
+    margin-top: 50px;
 }
 
 .pokedex-top {
@@ -13,11 +13,11 @@
     border-bottom-left-radius: 30%;
     border-bottom-right-radius: 30%;
     background-color: #ea0b29;
-    padding:  0 18px;
+    padding: 0 18px;
     /* background-color: #ea0b29; */
 }
 
-.home-img{
+.home-img {
     height: 50px;
     margin-right: 130px;
 }
@@ -26,13 +26,6 @@
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
-}
-
-@media(max-width:750px) {
-    .pokedex-list {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 0;
-    }
 }
 
 .pokemon-card {
@@ -85,9 +78,11 @@
     justify-content: space-between;
     align-items: center;
 }
-.pokemon-card .pokemon-type{
+
+.pokemon-card .pokemon-type {
     display: flex;
 }
+
 .pokemon-card .pokemon-type-text {
     margin-right: 10px;
     font: bold;
@@ -110,12 +105,99 @@
     text-transform: capitalize;
     color: aliceblue;
 }
+
 .pokemon-card p {
     font-weight: bold;
     color: aliceblue;
 }
 
-.pokemon-heart-btn{
+.pokemon-heart-btn {
     color: red;
+}
+
+.info {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0px 25px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    height: 100%;
+}
+
+.info-6 {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0px 25px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-bottom: 40px;
+    height: 100%;
+}
+
+@media (max-width: 1200px) and (min-width: 825px) {
+    .pokedex-list {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
+
+    .info-6 {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
+
+    .info {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
+}
+
+@media(max-width:824px) {
+    .pokedex-list {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+
+    .child-to-body {
+        display: none;
+    }
+
+    .home-img {
+        margin-right: 0px;
+    }
+
+    .info-6 {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+
+    .info {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+
+}
+
+@media(max-width:621px) {
+    .pokedex {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .home-img {
+        display: none;
+    }
+}
+
+@media(max-width:433px) {
+    .pokedex-top   {
+        display: block;
+        align-items: center;
+        justify-content: center;      
+    }
+    .search-container .search{
+        width: 70%;
+        margin-left: 10px;        
+    }
+    .pagination-container{
+        margin-top: 5px;
+        margin-left: 32%;
+    }
 }
 

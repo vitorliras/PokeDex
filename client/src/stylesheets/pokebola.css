@@ -4,6 +4,12 @@
     flex-shrink: 0;
 }
 
+.child-to-body-load {
+    width: 300px;
+    height: 400px;
+    flex-shrink: 0;
+}
+
 .poke_box {
     position: absolute;
     top: 11%;
@@ -160,8 +166,8 @@
     }
 }
 
-@media(max-width:750px) {
-    .child-to-body {
-        display: none;
+@media(max-width:1270px) {
+    .poke_box_load {
+        top: 65%;
     }
 }

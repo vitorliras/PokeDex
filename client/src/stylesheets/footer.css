@@ -21,12 +21,16 @@
     margin-left: 60px;
 }
 
-.notfound{
-    display: flex;
-    height: 305px;
-    align-items: center;
-    justify-content: center;
+@media(max-width:621px) {
+    .footer-pokedex{
+        padding: 0 ;
+    }
 }
 
-
-
+@media(max-width:485px) {
+    .footer-box  a{
+        padding: 10px;
+        margin-left: 20px;
+    }
+    
+}

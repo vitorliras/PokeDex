@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const NavBar = () => {
     const { favoritePokemons } = useContext(favoriteContext)
-    const path = window.location.pathname
+    // const path = window.location.pathname
     return (
         <nav className='nav-header'>
             <div>
@@ -32,7 +32,11 @@ const NavBar = () => {
 
                 </div>
             </div>
-            <div className='heart-nav btn1'><button>❤️{favoritePokemons.length} FAVORITE</button></div>
+            <div className='heart-nav btn1'>
+                <NavLink exact to="/favorite">
+                    <button>❤️{favoritePokemons.length} FAVORITE</button>
+                </NavLink>
+            </div>
         </nav>
     )
 }

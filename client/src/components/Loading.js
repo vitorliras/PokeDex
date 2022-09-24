@@ -3,9 +3,7 @@ import React from 'react'
 const Loading = () => {
     return (
         <div>
-            <div class="child-to-body box">
-
-                <div class="box child-to-body">
+            <div class="child-to-body-load box">              
 
                     <div class="poke_box_load">
 
@@ -17,7 +15,7 @@ const Loading = () => {
 
                     </div>
 
-                </div>
+                
             </div>
         </div>
     )

@@ -1,11 +1,12 @@
-import React, {useContext} from 'react'
+import React, { useContext } from 'react'
 import favoriteContext from '../Context/favoriteContext'
 
 const Pokemon = (props) => {
-    const {favoritePokemons,updateFavoritePokemons}=useContext(favoriteContext);
+    const { favoritePokemons, updateFavoritePokemons } = useContext(favoriteContext);
     const { pokemon } = props
-    const onHeartClick = () => {
-        updateFavoritePokemons(pokemon.name)
+    const onHeartClick = (e) => {
+        e.preventDefault();
+        updateFavoritePokemons(pokemon.name);
     }
     const redHeart = "❤️";
     const blackHeart = "🖤";
